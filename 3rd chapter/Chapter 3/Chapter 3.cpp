@@ -101,7 +101,7 @@ void doTask6(void)
 	int32_t volumeInQuarts;
 	printf("Enter the volume of water in quarts: ");
 	scanf("%d", &volumeInQuarts);
-	printf("There are approximately %f molules in this volume of water\n", volumeInQuarts * 950 / 3e-23);
+	printf("There are approximately %e molules in this volume of water\n", volumeInQuarts * 950 / 3e-23);
 }
 
 void doTask7(void)
