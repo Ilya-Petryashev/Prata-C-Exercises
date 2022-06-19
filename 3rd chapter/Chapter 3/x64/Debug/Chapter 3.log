@@ -1,0 +1,8 @@
+﻿  Chapter 3.cpp
+C:\Работа\GitHub_Repos\Prata-C-Exercises\3rd chapter\Chapter 3\Chapter 3.cpp(58,43): warning C4309: 'initializing': truncation of constant value
+C:\Работа\GitHub_Repos\Prata-C-Exercises\3rd chapter\Chapter 3\Chapter 3.cpp(60,40): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Работа\GitHub_Repos\Prata-C-Exercises\3rd chapter\Chapter 3\Chapter 3.cpp(120,31): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Работа\GitHub_Repos\Prata-C-Exercises\3rd chapter\Chapter 3\Chapter 3.cpp(121,28): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Работа\GitHub_Repos\Prata-C-Exercises\3rd chapter\Chapter 3\Chapter 3.cpp(122,35): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Работа\GitHub_Repos\Prata-C-Exercises\3rd chapter\Chapter 3\Chapter 3.cpp(123,42): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Chapter 3.vcxproj -> C:\Работа\GitHub_Repos\Prata-C-Exercises\3rd chapter\x64\Debug\Chapter 3.exe
