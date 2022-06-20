@@ -1,3 +1,10 @@
 ﻿  Chapter 4.cpp
-C:\Работа\GitHub_Repos\Prata-C-Exercises\4th chapter\Chapter 4\Chapter 4.cpp(57,21): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Работа\GitHub_Repos\Prata-C-Exercises\4th chapter\Chapter 4\Chapter 4.cpp(74,9): warning C4477: 'printf' : format string '%*s' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+C:\Работа\GitHub_Repos\Prata-C-Exercises\4th chapter\Chapter 4\Chapter 4.cpp(74,9): message : this argument is used as a field width
+C:\Работа\GitHub_Repos\Prata-C-Exercises\4th chapter\Chapter 4\Chapter 4.cpp(103,32): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Работа\GitHub_Repos\Prata-C-Exercises\4th chapter\Chapter 4\Chapter 4.cpp(115,27): warning C4267: '=': conversion from 'size_t' to 'int8_t', possible loss of data
+C:\Работа\GitHub_Repos\Prata-C-Exercises\4th chapter\Chapter 4\Chapter 4.cpp(116,33): warning C4267: '=': conversion from 'size_t' to 'int8_t', possible loss of data
+C:\Работа\GitHub_Repos\Prata-C-Exercises\4th chapter\Chapter 4\Chapter 4.cpp(127,24): warning C4305: '=': truncation from 'double' to 'float'
+C:\Работа\GitHub_Repos\Prata-C-Exercises\4th chapter\Chapter 4\Chapter 4.cpp(139,37): warning C4305: 'initializing': truncation from 'double' to 'float'
+C:\Работа\GitHub_Repos\Prata-C-Exercises\4th chapter\Chapter 4\Chapter 4.cpp(139,64): warning C4305: 'initializing': truncation from 'double' to 'float'
   Chapter 4.vcxproj -> C:\Работа\GitHub_Repos\Prata-C-Exercises\4th chapter\x64\Debug\Chapter 4.exe
