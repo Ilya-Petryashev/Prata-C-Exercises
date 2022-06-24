@@ -1,0 +1,11 @@
+﻿  Chapter 6.cpp
+C:\Работа\GitHub_Repos\Prata-C-Exercises\6th chapter\Chapter 6\Chapter 6.cpp(205,47): warning C4101: 'rows': unreferenced local variable
+C:\Работа\GitHub_Repos\Prata-C-Exercises\6th chapter\Chapter 6\Chapter 6.cpp(230,35): warning C4267: '=': conversion from 'size_t' to 'int32_t', possible loss of data
+C:\Работа\GitHub_Repos\Prata-C-Exercises\6th chapter\Chapter 6\Chapter 6.cpp(244,10): warning C4101: 'status': unreferenced local variable
+C:\Работа\GitHub_Repos\Prata-C-Exercises\6th chapter\Chapter 6\Chapter 6.cpp(263,10): warning C4101: 'status': unreferenced local variable
+C:\Работа\GitHub_Repos\Prata-C-Exercises\6th chapter\Chapter 6\Chapter 6.cpp(343,27): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Работа\GitHub_Repos\Prata-C-Exercises\6th chapter\Chapter 6\Chapter 6.cpp(344,37): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Работа\GitHub_Repos\Prata-C-Exercises\6th chapter\Chapter 6\Chapter 6.cpp(419,2): warning C4267: 'initializing': conversion from 'size_t' to 'int32_t', possible loss of data
+C:\Работа\GitHub_Repos\Prata-C-Exercises\6th chapter\Chapter 6\Chapter 6.cpp(439,25): warning C4305: '*=': truncation from 'double' to 'float'
+C:\Работа\GitHub_Repos\Prata-C-Exercises\6th chapter\Chapter 6\Chapter 6.cpp(459,28): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Chapter 6.vcxproj -> C:\Работа\GitHub_Repos\Prata-C-Exercises\6th chapter\x64\Debug\Chapter 6.exe

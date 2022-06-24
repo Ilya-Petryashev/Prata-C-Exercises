@@ -97,7 +97,6 @@ int main()
 		scanf("%d", &taskNum);
 	}
 
-
 	return 0;
 }
 
@@ -107,7 +106,7 @@ void doTask1(void)
 	char alphabet[SIZE];
 
 	printf("This task writes out the English alphabet\n");
-	for (char ch = 'a'; ch <= 'z'; ch++)						// the array is written
+	for (char ch = 'a'; ch <= 'z'; ch++)								// the array is written
 	{
 		alphabet[ch - 'a'] = ch;
 	}
@@ -115,6 +114,7 @@ void doTask1(void)
 	{
 		printf("%c ", alphabet[count]);
 	}
+
 	printf("\n\tThe task is now complete!\n");
 }
 
@@ -130,6 +130,7 @@ void doTask2(void)
 		}
 		printf("\n");
 	}
+
 	printf("\tThe task is now complete!\n");
 }
 
@@ -161,6 +162,7 @@ void doTask4(void)
 		}
 		printf("\n");
 	}
+
 	printf("\tThe task is now complete!\n");
 }
 
@@ -171,8 +173,8 @@ void doTask5(void)
 
 	printf("This task writes out a quirky pyramid\n");
 	printf("Enter any capital English letter: ");
-	scanf(" %c", &baseLetter);								// Using a whitespace character in scanf() would ignore any number 
-															// of whitespace characters left in the input stream
+	scanf(" %c", &baseLetter);									// Using a whitespace character in scanf() would ignore any number 
+																// of whitespace characters left in the input stream
 	rows = (int32_t) (baseLetter - 'A' + 1);
 	
 	for (int32_t rowNum = 1; rowNum <= rows; rowNum++)
@@ -232,6 +234,7 @@ void doTask7(void)
 	{
 		printf("%c", string[i]);
 	}
+
 	printf("\n\tThe task is now complete!\n");
 }
 
@@ -292,7 +295,8 @@ void doTask10(void)
 		}
 		printf("Sum of squares of integers between %d and %d equals %d\n", 
 			lowerLimitSquare, upperLimitSquare, sum);
-		printf("Enter other pair of limits: ");
+
+		printf("Enter other pair of limits (limit1 > limit2 for escape): ");
 		scanf("%d %d", &lowerLimit, &upperLimit);
 	}
 
@@ -324,43 +328,157 @@ void doTask11(void)
 
 void doTask12(void)
 {
+	int32_t numOfElements, sign = 1;
+	float constantSignSum, alternatingSignSum;
 
+	printf("This task calculates sums of two infinite series of numbers\n");
+	printf("Enter number of elements in the series: ");
+	scanf("%d", &numOfElements);
+
+	while (numOfElements > 0)
+	{
+		constantSignSum = alternatingSignSum = 0;
+		for (float divisor = 1.0; divisor <= (float) numOfElements; divisor++)
+		{
+			constantSignSum += 1.0 / divisor;
+			alternatingSignSum += sign * 1.0 / divisor;
+			sign = -sign;
+		}
+		printf("If the number of series equals %d, then: \n", numOfElements);
+		printf("  1.0 + 1.0/2.0 + 1.0/3.0 + 1.0/4.0 + ... = %f\n", constantSignSum);
+		printf("  1.0 - 1.0/2.0 + 1.0/3.0 - 1.0/4.0 + ... = %f\n", alternatingSignSum);
+
+		printf("Enter other number of elements in the series (<=0 to escape): ");
+		scanf("%d", &numOfElements);
+	}
 	printf("\tThe task is now complete!\n");
 }
 
 void doTask13(void)
 {
+	const int32_t SIZE = 8;
+	int index = 0, powersOf2[SIZE];
 
-	printf("\tThe task is now complete!\n");
+	printf("This task calculates first %d powers of 2:\n", SIZE);
+	for (int32_t power = 1; power <= SIZE; power++)
+	{
+		powersOf2[power - 1] = 1;
+		for (int32_t i = 1; i <= power; i++)
+		{
+			powersOf2[power - 1] *= 2;
+		}
+	}
+	do
+	{
+		printf("%d ", powersOf2[index]);
+	} while (++index < SIZE);
+
+	printf("\n\tThe task is now complete!\n");
 }
 
 void doTask14(void)
 {
+	const int32_t SIZE = 8;
+	double data[SIZE], sum[SIZE];
+	int32_t i;
 
-	printf("\tThe task is now complete!\n");
+	printf("Enter %d double values: ", SIZE);
+	for (i = 0; i < SIZE; i++)
+	{
+		scanf("%lf", &data[i]);
+	}
+
+	sum[0] = data[0];
+	for (i = 1; i < SIZE; i++)
+	{
+		sum[i] = sum[i - 1] + data[i];
+	}
+
+	for (i = 0; i < SIZE; i++)										// i was lazy to print according to the task
+	{
+		printf("%.2f ", data[i]);
+	}
+	printf("\n");
+	for (i = 0; i < SIZE; i++)
+	{
+		printf("%.2f ", sum[i]);
+	}
+	printf("\n\tThe task is now complete!\n");
 }
 
 void doTask15(void)
 {
+	const int32_t SIZE = 256;
+	char string[SIZE], temp;
 
-	printf("\tThe task is now complete!\n");
+	printf("Enter any string (e.g. your name and surmane): ");
+	scanf("%c", &temp);												// temp statement to clear buffer
+	scanf("%[^\n]", string);										// impossible to read strings with spaces using scanf(%c) in cycle
+
+	printf("Input string backwards: ");
+	for (int32_t i = strlen(string) - 1; i >= 0; i--)
+	{
+		printf("%c", string[i]);
+	}
+	printf("\n\tThe task is now complete!\n");
 }
 
 void doTask16(void)
 {
+	float depositDaphne, depositDeirdre;
+	const float INIT_CONTRIBUTION_DAPHNE = 100.0, INIT_CONTRIBUTION_DEIRDRE = 100.0;
+	int32_t yearCount = 0;
+
+	printf("This task teaches us financial literacy\n");
+
+	depositDaphne = INIT_CONTRIBUTION_DAPHNE;
+	depositDeirdre = INIT_CONTRIBUTION_DEIRDRE;
+	do
+	{
+		depositDaphne += 0.1 * INIT_CONTRIBUTION_DAPHNE;
+		depositDeirdre *= 1.05;
+		yearCount++;
+	} while (depositDaphne > depositDeirdre);
+
+	printf("Within %d years Deirdre will have more money, than Daphne\n", yearCount);
+	printf("By this time, Daphne's deposit will have been worth $%.2f\n", depositDaphne);
+	printf("And Dierdre's deposit will have been worth $%.2f\n", depositDeirdre);
 
 	printf("\tThe task is now complete!\n");
 }
 
 void doTask17(void)
 {
+	float deposit = 1000000.0;
+	int32_t yearCount = 0;
+
+	printf("This task calculates how many years of wealth can be bought by $1'000'000\n");
+
+	do
+	{
+		deposit = 1.08 * deposit - 100000.0;
+		yearCount++;
+	} while (deposit > 0);
+
+	printf("Within %d years Chucky Lucky will run out of money\n", yearCount);
 
 	printf("\tThe task is now complete!\n");
 }
 
 void doTask18(void)
 {
+	const int32_t DUNBARS_NUMBER = 150;
+	int32_t weakCount = 0, friendsCount = 5;
 
+	printf("This task teaches us how social networks work\n");
+
+	do
+	{
+		weakCount++;
+		friendsCount = 2 * (friendsCount - weakCount);
+	} while (friendsCount <= DUNBARS_NUMBER);
+
+	printf("Within %d weaks prof. Robins will have more friends, than he can handle\n", weakCount);
 	printf("\tThe task is now complete!\n");
 }
 
