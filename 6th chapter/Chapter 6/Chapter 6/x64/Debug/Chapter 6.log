@@ -1,0 +1,6 @@
+﻿  Chapter 6.cpp
+C:\Работа\GitHub_Repos\Prata-C-Exercises\6th chapter\Chapter 6\Chapter 6\Chapter 6.cpp(203,47): warning C4101: 'rows': unreferenced local variable
+C:\Работа\GitHub_Repos\Prata-C-Exercises\6th chapter\Chapter 6\Chapter 6\Chapter 6.cpp(228,35): warning C4267: '=': conversion from 'size_t' to 'int32_t', possible loss of data
+C:\Работа\GitHub_Repos\Prata-C-Exercises\6th chapter\Chapter 6\Chapter 6\Chapter 6.cpp(241,10): warning C4101: 'status': unreferenced local variable
+C:\Работа\GitHub_Repos\Prata-C-Exercises\6th chapter\Chapter 6\Chapter 6\Chapter 6.cpp(260,10): warning C4101: 'status': unreferenced local variable
+  Chapter 6.vcxproj -> C:\Работа\GitHub_Repos\Prata-C-Exercises\6th chapter\Chapter 6\x64\Debug\Chapter 6.exe

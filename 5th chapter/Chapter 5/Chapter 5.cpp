@@ -206,18 +206,18 @@ void doTask8(void)
 void doTask9(void)
 {
 	double temperatureF;
-	int32_t whileCondition;
+	int32_t status;
 	char x;
 
 	printf("This task converts temperature to other measurement systems\n");
 	printf("Enter temperature in Fahrenheit: ");
-	whileCondition = scanf("%lf", &temperatureF);
+	status = scanf("%lf", &temperatureF);
 
-	while (whileCondition == 1)
+	while (status == 1)
 	{
 		Temperatures(temperatureF);
 		printf("Enter anoter temperature in Fahrenheit (non-numerical input to escape): ");
-		whileCondition = scanf("%lf", &temperatureF);
+		status = scanf("%lf", &temperatureF);
 		int i = 0;
 	}
 
